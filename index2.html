@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ece9e6, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .calculator {
+      background: #222;
+      border-radius: 16px;
+      padding: 30px 25px;
+      width: 320px;
+      text-align: center;
+    }
+
+    .calculator input {
+      width: 120px;
+      padding: 10px;
+      margin: 5px;
+      border: none;
+      border-radius: 8px;
+      text-align: right;
+      background-color: #f1f1f1;
+      outline: none;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .buttons button {
+      width: 60px;
+      height: 60px;
+      margin: 8px;
+      border: none;
+      border-radius: 12px;
+      background-color: #444;
+      color: white;
+      font-size: 22px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+    }
+
+    #showResult {
+      margin-top: 20px;
+      background: #111;
+      color: white;
+      font-size: 24px;
+      padding: 10px;
+      border-radius: 8px;
+      min-height: 40px;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <input autofocus id="firstNumber" type="text" placeholder="First number">
+    <input id="secondNumber" type="text" placeholder="Second number">
+    
+    <div class="buttons">
+      <button onclick="multiply()">×</button>
+      <button onclick="add()">+</button>
+      <button onclick="subtract()">-</button>
+      <button onclick="divide()">÷</button>
+    </div>
+
+    <div id="showResult"></div>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>
